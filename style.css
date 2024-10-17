@@ -1,0 +1,56 @@
+/* Targeting different types of DOM elements */
+/* Targeting paragraphs inside the container div */
+.container p:nth-child(1) {
+    color: darkgreen;
+  }
+  
+  .container p:nth-child(2) {
+    color: red;
+  }
+  
+  .container p:nth-child(3) {
+    color: purple;
+  }
+  
+  /* Targeting paragraphs inside the main div */
+  .main p {
+    color: darkgoldenrod;
+  }
+  
+  /* Flexbox layout */
+  /* Styling the content class to display its items using flex */
+  .content {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Vertically center items */
+    height: 200px; /* Height to show the centering effect */
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ddd; /* Border for visualization */
+  }
+  
+  .item {
+    background-color: coral; /* Give each item a color */
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; /* Rounded corners for each item */
+  }
+  
+  /* Positioning child element exactly at the center of parent */
+  .parent {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: lightblue;
+    margin: 0 auto;
+  }
+  
+  .child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
